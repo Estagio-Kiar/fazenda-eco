@@ -1,0 +1,28 @@
+# Publicação da loja no Render como site estático (Blueprint).
+# No Render: New → Blueprint → escolher este repositório.
+services:
+  - type: web
+    runtime: static
+    name: fazenda-loja
+    branch: main
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      # O Vite 8 precisa do Node 20.19 ou mais recente
+      - key: NODE_VERSION
+        value: '22'
+      # Dados fictícios enquanto a API não existir. Quando existir:
+      # VITE_USE_MOCK=false e VITE_API_URL=https://<api>.onrender.com
+      - key: VITE_USE_MOCK
+        value: 'true'
+    routes:
+      # A loja tem uma só página HTML; o React Router trata as rotas no navegador.
+      # Sem esta regra, abrir /loja ou fazer refresh numa página dá 404.
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      # Os ficheiros do build têm um código no nome, por isso podem ficar em cache muito tempo
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable

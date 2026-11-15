@@ -110,6 +110,20 @@ npx gltf-transform optimize entrada.glb public/modelos/tomate.glb \
 Meta: 1 a 3 MB por modelo. Evite a compressão Draco: o descodificador vem de um CDN externo.
 A Meshopt funciona no visualizador, mas convém testar o «Ver em AR» no Android antes de a usar.
 
+## Publicação (Render)
+
+A loja é publicada no Render como **site estático**, com a configuração em `render.yaml`:
+
+1. Fazer push para a branch `main` no GitHub.
+2. No Render: **New → Blueprint** e escolher o repositório `Estagio-Kiar/fazenda-girassol`.
+3. O Render corre `npm ci && npm run build` e publica a pasta `dist`. Cada push para `main` publica de novo.
+
+Notas:
+
+- A regra de rewrite (`/*` → `/index.html`) é obrigatória: sem ela, abrir `/loja` directamente ou fazer refresh dá 404.
+- As variáveis `VITE_` são lidas no build. Depois de as mudar, fazer **Manual Deploy → Clear build cache & deploy**.
+- Quando a API existir: `VITE_USE_MOCK=false` e `VITE_API_URL=https://<api>.onrender.com`. A API tem de permitir (CORS) o endereço da loja.
+
 ## Para acertar com o back-end (Artur)
 
 O contrato está em `src/api/contrato.ts` e os caminhos propostos em `src/api/api-http.ts`:
