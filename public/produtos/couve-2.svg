@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+<defs><radialGradient id="bg54" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#E3F2DC"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#bg54)"/>
+<g transform="translate(200 200) scale(1.25) rotate(-8) translate(-200 -205)"><ellipse cx="200" cy="320" rx="120" ry="16.8" fill="#1f3d2b" opacity=".12"/><path transform="translate(200 315) rotate(-145)" d="M0 0 C 63 -55 157.5 -55 210 0 C 157.5 55 63 55 0 0Z" fill="#2f7a25"/>
+<path transform="translate(200 315) rotate(-145)" d="M2 0 L 189 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(200 315) rotate(-115)" d="M0 0 C 60 -55 150 -55 200 0 C 150 55 60 55 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(200 315) rotate(-115)" d="M2 0 L 180 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(200 315) rotate(-85)" d="M0 0 C 57 -55 142.5 -55 190 0 C 142.5 55 57 55 0 0Z" fill="#2f7a25"/>
+<path transform="translate(200 315) rotate(-85)" d="M2 0 L 171 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(200 315) rotate(-55)" d="M0 0 C 54 -55 135 -55 180 0 C 135 55 54 55 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(200 315) rotate(-55)" d="M2 0 L 162 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/></g>
+</svg>

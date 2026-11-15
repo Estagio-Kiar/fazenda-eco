@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+<defs><radialGradient id="bg74" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#E3F2DC"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#bg74)"/>
+<g transform="translate(200 200) scale(1.25) rotate(-8) translate(-200 -205)"><ellipse cx="200" cy="325" rx="150" ry="21.000000000000004" fill="#1f3d2b" opacity=".12"/><rect x="70" y="230" width="260" height="70" rx="16" fill="#d9c7a3"/><defs><radialGradient id="g70" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".25" stop-color="#f3e2c4"/><stop offset="1" stop-color="#c9a874"/></radialGradient></defs>
+<ellipse cx="110" cy="215" rx="32" ry="44" fill="url(#g70)"/><defs><radialGradient id="g71" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".25" stop-color="#eed6b0"/><stop offset="1" stop-color="#c9a874"/></radialGradient></defs>
+<ellipse cx="170" cy="215" rx="32" ry="44" fill="url(#g71)"/><defs><radialGradient id="g72" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".25" stop-color="#f5e7cf"/><stop offset="1" stop-color="#c9a874"/></radialGradient></defs>
+<ellipse cx="230" cy="215" rx="32" ry="44" fill="url(#g72)"/><defs><radialGradient id="g73" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".25" stop-color="#ecd2a8"/><stop offset="1" stop-color="#c9a874"/></radialGradient></defs>
+<ellipse cx="290" cy="215" rx="32" ry="44" fill="url(#g73)"/></g>
+</svg>

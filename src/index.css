@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource-variable/inter';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Paleta da Fazenda (relatório técnico, secção A.4).
+ * Proporção sugerida: ~60% branco, ~30% verdes claros, ~10% verde campo + texto escuro + amarelo de destaque.
+ * Regras:
+ *  - Nunca usar verde folha, verde sálvia ou amarelo como cor de TEXTO sobre branco (contraste insuficiente).
+ *  - Botões de compra: verde campo com texto branco (5,1 : 1). Secundários: contorno verde sálvia.
+ *  - Amarelo só em promoções e selos, sempre com texto verde floresta (6,6 : 1).
+ */
+:root {
+  --branco: #ffffff;
+  --verde-nevoa: #f6fbf4;
+  --verde-menta: #e3f2dc;
+  --verde-salvia: #b7dca8;
+  --verde-folha: #7cb86a;
+  --verde-campo: #2e7d32;
+  --verde-campo-escuro: #256b29;
+  --verde-floresta: #1f3d2b;
+  --cinza-verde: #5b6b60;
+  --amarelo: #f2b705;
+  --vermelho: #c62828;
+
+  /* Tokens semânticos (convenção shadcn) */
+  --background: var(--branco);
+  --foreground: var(--verde-floresta);
+  --card: var(--branco);
+  --card-foreground: var(--verde-floresta);
+  --popover: var(--branco);
+  --popover-foreground: var(--verde-floresta);
+  --primary: var(--verde-campo);
+  --primary-foreground: var(--branco);
+  --secondary: var(--verde-menta);
+  --secondary-foreground: var(--verde-floresta);
+  --muted: var(--verde-nevoa);
+  --muted-foreground: var(--cinza-verde);
+  --accent: var(--verde-menta);
+  --accent-foreground: var(--verde-floresta);
+  --destaque: var(--amarelo);
+  --destaque-foreground: var(--verde-floresta);
+  --destructive: var(--vermelho);
+  --destructive-foreground: var(--branco);
+  --border: var(--verde-menta);
+  --input: var(--verde-salvia);
+  --ring: var(--verde-campo);
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-nevoa: var(--verde-nevoa);
+  --color-menta: var(--verde-menta);
+  --color-salvia: var(--verde-salvia);
+  --color-folha: var(--verde-folha);
+  --color-campo: var(--verde-campo);
+  --color-campo-escuro: var(--verde-campo-escuro);
+  --color-floresta: var(--verde-floresta);
+  --color-cinza-verde: var(--cinza-verde);
+  --color-amarelo: var(--amarelo);
+  --color-vermelho: var(--vermelho);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destaque: var(--destaque);
+  --color-destaque-foreground: var(--destaque-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply tracking-tight text-balance text-floresta;
+  }
+  ::selection {
+    @apply bg-menta text-floresta;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility container-loja {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

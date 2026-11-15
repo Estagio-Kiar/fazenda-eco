@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+<defs><radialGradient id="bg99" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#F6FBF4"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#bg99)"/>
+<g transform=""><ellipse cx="200" cy="325" rx="120" ry="16.8" fill="#1f3d2b" opacity=".12"/><path transform="translate(225 95) rotate(-100)" d="M0 0 C 25.5 -10 63.75 -10 85 0 C 63.75 10 25.5 10 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(225 95) rotate(-100)" d="M2 0 L 76.5 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(225 95) rotate(-80)" d="M0 0 C 25.5 -10 63.75 -10 85 0 C 63.75 10 25.5 10 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(225 95) rotate(-80)" d="M2 0 L 76.5 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(225 95) rotate(-60)" d="M0 0 C 25.5 -10 63.75 -10 85 0 C 63.75 10 25.5 10 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(225 95) rotate(-60)" d="M2 0 L 76.5 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path transform="translate(225 95) rotate(-40)" d="M0 0 C 25.5 -10 63.75 -10 85 0 C 63.75 10 25.5 10 0 0Z" fill="#3e8e2e"/>
+<path transform="translate(225 95) rotate(-40)" d="M2 0 L 76.5 0" stroke="#fff" stroke-opacity=".25" stroke-width="2"/><path d="M190 95 C 230 85 265 100 262 120 C 250 190 180 290 130 320 C 120 326 112 318 118 308 C 150 240 165 160 190 95Z" fill="#f07a1a"/><g stroke="#b9530a" stroke-width="3" stroke-linecap="round" opacity=".6"><path d="M200 150 l 25 5"/><path d="M180 200 l 22 6"/><path d="M160 250 l 18 5"/></g></g>
+</svg>
